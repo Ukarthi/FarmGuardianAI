@@ -1,0 +1,22 @@
+{
+  "name": "farmguardian-functions",
+  "version": "1.0.0",
+  "description": "Firebase Cloud Functions for FarmGuardian AI Decision Engine",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "private": true
+}
